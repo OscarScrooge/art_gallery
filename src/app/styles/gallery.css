@@ -1,0 +1,80 @@
+
+.gallery{
+   margin-left: 150px;
+   display: flex;
+   flex-flow: row wrap;
+   padding: 25px;
+   justify-content: center;
+   height: 500px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.frame{
+   padding: 25px;
+   width: 300px;
+}
+
+.frame > h4{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 15px;
+   border-bottom: solid 1px;
+}
+
+.frame > h5{
+   text-align: center;
+   border-bottom: solid 1px;
+}
+
+.frame > img{
+   width: 250px;
+   height: 200px;
+   object-fit: contain;
+   position: relative;
+   margin: auto;
+   display: block;
+   box-shadow: 1px 1px 5px 5px  #000000;
+   background-color: white;
+   transition: transform 1s;
+}
+
+.frame>img:hover{
+   transform: scale(1.6);
+}
+
+.met-logo{
+   height: 500px;
+   object-fit: contain;
+   opacity: 0;
+   animation: logo-animation-start forwards  6s;
+}
+
+.met-logo-animation{
+   animation: logo-animation-end forwards  0.3s;
+   transition: 0.3s;
+}
+
+@keyframes logo-animation-start {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+
+@keyframes logo-animation-end {
+   from{
+      height: 500px;
+   }
+   to{
+      height: 50px;
+      margin-left: 950px;
+      opacity: 0.2;
+      rotation: 180grad;
+      transform: rotate(360deg);
+   }
+}
+
+

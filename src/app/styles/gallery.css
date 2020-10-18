@@ -27,7 +27,7 @@
    border-bottom: solid 1px;
 }
 
-.frame > img{
+.frame > a>img{
    width: 250px;
    height: 200px;
    object-fit: contain;
@@ -39,7 +39,7 @@
    transition: transform 1s;
 }
 
-.frame>img:hover{
+.frame> a>img:hover{
    transform: scale(1.6);
 }
 
@@ -69,12 +69,19 @@
       height: 500px;
    }
    to{
+
       height: 50px;
       margin-left: 950px;
+      margin-right: 950px;
       opacity: 0.2;
       rotation: 180grad;
       transform: rotate(360deg);
    }
 }
 
+@media screen and (max-width: 768px) {
+   .frame>img:hover{
+      transform: scale(1.2);
+   }
 
+}

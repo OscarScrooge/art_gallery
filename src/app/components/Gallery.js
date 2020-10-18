@@ -24,7 +24,7 @@ function Gallery(props) {
         if(galleryData.totalObjectsByDepartment !== null){
 
            for (let i=0;i<6;i++){
-                fetchObjectById(galleryData.totalObjectsByDepartment.objectIDs[i]).then(data=>props.dispatch(setCard(data)));
+                 fetchObjectById(galleryData.totalObjectsByDepartment.objectIDs[i]).then(data=>props.dispatch(setCard(data)));
            }
             setRange({start:subArray.end, end: subArray.end+3});
             let img=document.getElementsByClassName("met-logo");
@@ -54,7 +54,12 @@ function Gallery(props) {
                 galleryData.cards.map((val,key)=>
                                  <Card key={key}
                                        img ={val.primaryImageSmall}
-                                       title={val.title} artist={val.artistDisplayName}
+                                       title={val.title}
+                                       artist={val.artistDisplayName}
+                                       culture = {val.culture}
+                                       dimensions = {val.dimensions}
+                                       creditLine ={val.creditLine}
+                                       classification ={val.classification}
                                        alt = {val.classification}
                                  />
                  )

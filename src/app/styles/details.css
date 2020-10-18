@@ -1,0 +1,41 @@
+.details{
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+    justify-content: center;
+    height: 100vh;
+}
+
+.details .details_right, .details_left{
+    width: 500px;
+    padding: 20px;
+}
+
+.details_left{
+    height: 500px;
+}
+
+.details_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 5px  #000000;
+}
+
+.details_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details_right >div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.details_right >div >h4,p{
+    margin: 0;
+    margin-bottom: 15px;
+}
+

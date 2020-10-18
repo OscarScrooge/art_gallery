@@ -9,6 +9,7 @@ function updateObject(oldObject, newValues) {
 const initialState={
         totalObjectsByDepartment:null,
         cards:[],
+        details:{},
  };
 
 export default function reducer(state=initialState,action) {
@@ -21,7 +22,11 @@ export default function reducer(state=initialState,action) {
         case 'set-card':
             return updateObject(state,{
                     cards:state.cards.concat(action.card),
-            });
+        });
+        case 'set-details':
+            return updateObject(state,{
+                details: action.details,
+        });
         default: return state;
     }
 

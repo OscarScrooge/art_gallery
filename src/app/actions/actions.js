@@ -22,3 +22,15 @@ export default function setCard(object){
     });
 }
 
+/**
+ *
+ * @param details
+ * @returns {{details: *}}
+ */
+export function setDetails(details) {
+    return({
+        type: "set-details",
+        details,
+    });
+}
+

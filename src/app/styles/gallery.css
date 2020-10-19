@@ -51,8 +51,7 @@
 }
 
 .met-logo-animation{
-   animation: logo-animation-end forwards  0.3s;
-   transition: 0.3s;
+   animation: logo-animation-end forwards  1.5s;
 }
 
 @keyframes logo-animation-start {
@@ -67,6 +66,8 @@
 @keyframes logo-animation-end {
    from{
       height: 500px;
+      object-fit: contain;
+      opacity: 1;
    }
    to{
 
@@ -74,8 +75,8 @@
       margin-left: 950px;
       margin-right: 950px;
       opacity: 0.2;
-      rotation: 180grad;
-      transform: rotate(360deg);
+      /*rotation: 180grad;*/
+      /*transform: rotate(360deg);*/
    }
 }
 

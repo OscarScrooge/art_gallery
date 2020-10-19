@@ -28,6 +28,7 @@ function SideNav(props) {
                         :
                         <span>Loading departments...</span>
                     }
+                    <a href="https://github.com/OscarScrooge/art_gallery" target="_blank">@OscarScrooge</a>
                 </nav>
 
     );

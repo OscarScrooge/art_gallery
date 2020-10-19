@@ -34,6 +34,14 @@
     font-size: smaller;
 }
 
+.side-nav a:last-child {
+    margin-top: auto;
+    background: -webkit-linear-gradient(#ff0080,#8600b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 .side-nav> .active{
     /*filter: brightness(0.5);*/
     background: -webkit-linear-gradient(#ff0000,#ff1ac6);

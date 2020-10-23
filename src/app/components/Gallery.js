@@ -50,8 +50,10 @@ function Gallery(props) {
     return (
         <div className="gallery" onScroll={event => handleScroll(event)}>
             <img src={metLogo} className="met-logo" alt="met-logo"/>
+
             {
                 galleryData.cards.map((val,key)=>
+
                                  <Card key={key}
                                        img ={val.primaryImageSmall}
                                        title={val.title}
@@ -64,7 +66,6 @@ function Gallery(props) {
                                  />
                  )
             }
-
 
 
         </div>

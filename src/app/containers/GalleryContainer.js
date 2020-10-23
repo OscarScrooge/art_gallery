@@ -7,6 +7,7 @@ function GalleryContainer(props) {
     const {gallery_data} =props;
 
     return (
+
          <Gallery gallery_data={gallery_data}/>
     );
 }

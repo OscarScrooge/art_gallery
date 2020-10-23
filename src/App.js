@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
         <div className="App">
+
             <Switch>
                 <Route path="/details" >
                     <ContainerDetails />
